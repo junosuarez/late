@@ -3,7 +3,10 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "load you a directory full of templates for great justice",
-  "keywords": ["template", "bliss"],
+  "keywords": [
+    "template",
+    "bliss"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
@@ -11,8 +14,13 @@
   "repository": "git@github.com:jden/late.git",
   "license": "MIT",
   "readmeFilename": "README.md",
+  "dependencies": {
+    "bliss": "~1.0.1",
+    "funderscore": "~0.3.0"
+  },
   "devDependencies": {
     "chai": "~1.6.0",
-    "mocha": "~1.9.0"
+    "mocha": "~1.9.0",
+    "chai-interface": "~1.1.0"
   }
 }

@@ -1,11 +1,16 @@
 # late
 load you a directory full of templates for great justice
 
+we use [bliss](https://npm.im/bliss) templates, cause they're neat. consider submitting a pull request on github to add support for your favorite other templating engine.
+
 ## usage
 
     var late = require('late')
+    var templates = late('./my/template/dir')
 
-## api
+    templates['rel/path/to/template.bliss'](/* template params */)
+
+All files, recursively, in the template directory are loaded and compiled into the `templates` object, which is a `Dictionary<path: String, Function>`
 
 
 ## installation
